@@ -14,9 +14,11 @@ public class MainManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-        LoadColor();
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }    LoadColor();
     }
     [System.Serializable]
     class SaveData

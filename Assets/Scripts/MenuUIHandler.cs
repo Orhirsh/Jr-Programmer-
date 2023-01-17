@@ -13,6 +13,7 @@ using UnityEditor;
 public class MenuUIHandler : MonoBehaviour
 {
     public ColorPicker ColorPicker;
+    
 
     public void NewColorSelected(Color color)
     {
